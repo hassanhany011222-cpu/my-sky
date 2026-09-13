@@ -69,3 +69,70 @@ function createStars() {
 ============================== */
 
 createStars();
+
+// =========================
+// SCREEN CONTROL
+// =========================
+
+const screens = document.querySelectorAll(".screen");
+
+function showScreen(screenId) {
+    screens.forEach(screen => {
+        screen.classList.remove("active");
+    });
+
+    const target = document.getElementById(screenId);
+
+    if (target) {
+        target.classList.add("active");
+    }
+}
+
+
+// =========================
+// PHOTO ONE
+// =========================
+
+const photoOne = document.getElementById("photoOne");
+
+photoOne.innerHTML = `
+    <div class="photo-stage">
+
+        <div class="photo-frame">
+            <img src="images/photo1.jpg" alt="Samira">
+        </div>
+
+        <p class="photo-message">
+            كل ما أبص في صورتك، بتخيل وبنبهر أكتر من كل مرة.
+        </p>
+
+        <button class="photo-next" id="photoNext">
+            كملي ✨
+        </button>
+
+    </div>
+`;
+
+
+// =========================
+// START BUTTON
+// =========================
+
+startBtn.addEventListener("click", () => {
+
+    showScreen("photoOne");
+
+});
+
+
+// =========================
+// NEXT TO STARS
+// =========================
+
+const photoNext = document.getElementById("photoNext");
+
+photoNext.addEventListener("click", () => {
+
+    showScreen("starsStage");
+
+});
