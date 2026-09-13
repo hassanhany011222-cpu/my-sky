@@ -99,7 +99,7 @@ photoOne.innerHTML = `
     <div class="photo-stage">
 
         <div class="photo-frame">
-            <img src="images/photo1.jpg" alt="Samira">
+            <img src="photo1.jpeg" alt="Samira">
         </div>
 
         <p class="photo-message">
