@@ -99,7 +99,23 @@ photoOne.innerHTML = `
     <div class="photo-stage">
 
         <div class="photo-frame">
-            <img src="photo1.jpeg" alt="Samira">
+            photoOne.innerHTML = `
+    <div class="photo-stage">
+
+        <div class="photo-frame">
+            <img src="/my-sky/photo1.jpeg" alt="Samira">
+        </div>
+
+        <p class="photo-message">
+            كل ما أبص في صورتك، بتخيل وبنبهر أكتر من كل مرة.
+        </p>
+
+        <button class="photo-next" id="photoNext">
+            كملي ✨
+        </button>
+
+    </div>
+`;
         </div>
 
         <p class="photo-message">
